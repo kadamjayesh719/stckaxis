@@ -1,9 +1,24 @@
 <ion-view view-title="Dashboard">
-  <ion-content class="padding">
+    <div class="row fixedTableHeader">
+      <div class="col col-40">ShortCode</div>
+      <div class="col col-20 text-center">Price</div>
+      <div class="col col-20 text-center">Trend</div>
+      <div class="col col-20 text-center">Rating</div>      
+    </div>
+    <div class="row fixedTableDate center" >
+      <div class="col">{{items[0].Date}}</div>     
+    </div>
+  <ion-content class="padding fixedHeader">
     <ion-list>
-      <ion-item ng-repeat="item in items" item="item">
+      <!-- 	<ion-item ng-repeat="item in items" item="item">
       {{item.ShortCode}}
-      </ion-item>
+      </ion-item> -->
     </ion-list>
+    <div class="row" ng-repeat="item in items" item="item">
+      <div class="col col-40">{{item.ShortCode}}</div>
+      <div class="col col-20 text-center">{{item.ClosingPrice}}</div>
+      <div class="col col-20 text-center">{{item.LongTrend}}</div>
+      <div class="col col-20 text-center">{{item.Rating}}</div>
+    </div>
   </ion-content>
 </ion-view>

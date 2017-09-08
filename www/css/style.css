@@ -1,1 +1,18 @@
 /* Empty. Add your own CSS if you like */
+.fixedTableHeader {
+    margin-top: 93px;
+    background-color: #eaeaea;
+}
+.fixedTableDate {
+    margin-top: 120px;
+    text-align: center;
+    border-bottom: 1px solid #d6d6d6;
+    margin-top: 2px !important;
+    padding: 0;
+}
+.fixedHeader {
+    padding: 0 0px;
+}
+.has-tabs-top {
+    top: 165px;
+}
